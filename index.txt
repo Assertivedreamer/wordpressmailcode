@@ -1,0 +1,222 @@
+<style>
+        / Reset styles /
+        body {
+            margin: 0;
+            padding: 0;
+            min-width: 100%;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        body,
+        table,
+        td,
+        div,
+        p,
+        a {
+            -webkit-font-smoothing: antialiased;
+            text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            line-height: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            border-collapse: collapse !important;
+            border-spacing: 0;
+        }
+
+        img {
+            border: 0;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        #outlook a {
+            padding: 0;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        / Rounded corners for advanced mail clients only /
+        @media all and (min-width: 560px) {
+            .container {
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -khtml-border-radius: 8px;
+            }
+        }
+
+        / Set color for auto links (addresses, dates, etc.) /
+        a,
+        a:hover {
+            color: #127DB3;
+        }
+
+        .footer a,
+        .footer a:hover {
+            color: #999999;
+        }
+    </style>
+
+</head>
+
+<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%; height: 100%; -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%;background-color: #F0F0F0;color: #000000;" bgcolor="#F0F0F0" text="#000000">
+    <!--                     WRAPPER / CONTEINER 
+                     Set conteiner background color -->
+    <a href="https://infinityvizag.in/"><img src="https://theitaap.org/images/Infinity-vizag_logo_for_mobile-responsive.png" style="width: 120px" /></a>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" width="660" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit; max-width: 650px;" class="container">
+
+        <!--                         HEADER 
+                         Set text color and font family ("sans-serif" or "Georgia, serif") -->
+        <tr>
+            <td valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 3.25%; padding-right: 6.25%; width: 87.5%; font-size: 15px; font-weight: bold; line-height: 130%;padding-top: 5px;background: #7b1660;color: #fff;font-family: sans-serif;" class="header">
+                Hi <?php echo ucwords(strtolower($username)); ?>,
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 18px; font-weight: bold; line-height: 130%;padding-top: 5px;background: #7b1660;color: #fff;font-family: sans-serif;padding-bottom: 10px;" class="header">
+                Thank you for the group registration.
+            </td>
+        </tr>
+
+        <!--Set line color-->
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0;padding-bottom: 10px; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;padding-top: 0px;" class="line">
+                <hr color="#E0E0E0" align="center" width="100%" size="1" noshade style="margin: 0; padding: 0;" />
+            </td>
+        </tr>
+        <tr style="position: relative">
+            <td colspan="3">
+
+
+                <div style="padding: 0px 10px;">
+                    <label class="heading text-center" style="font-family: Lato-Semibold;font-size: 18px;border-bottom: 4px solid #7b1660;display: flex;margin-bottom: 0px;padding-bottom: 8px;text-align: center;width:100%;">Event Info</label>
+
+                    <div class="row" style="display: flex;padding: 15px 0px;">
+
+                        <div class="sub-heading col-md-6" style="width: 50%;">
+                            <div style="width: 100%;padding-bottom: 8px;font-family: Lato-Semibold;font-size: 13px;color: #989898;">Event Title </div>
+
+                            <label class="current_plan_name" style="width: 100%;font-size: 15px;font-family: Lato-Semibold;"><?php echo $name; ?></span>
+                        </div>
+                        <div class="sub-heading  col-md-6" style="width: 50%;">
+                            <div style="width: 100%;padding-bottom: 8px;font-family: Lato-Semibold;font-size: 13px;color: #989898;">Location</div>
+
+                            <label class="current_exp_date" style="width: 100%;font-size: 15px;font-family: Lato-Semibold;"><?php echo $loc; ?></span>
+                        </div>
+                    </div>
+                    <div class="row" style="display: flex;padding: 15px 0px;">
+
+                        <div class="sub-heading col-md-6" style="width: 50%;">
+                            <div style="width: 100%;padding-bottom: 8px;font-family: Lato-Semibold;font-size: 13px;color: #989898;">Event Ticket Category </div>
+
+                            <label class="current_plan_name" style="width: 100%;font-size: 15px;font-family: Lato-Semibold;"><?php echo $tname; ?></span>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!--LINE-->
+        <tr>
+            <td valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding:0px 10px; width: 87.5%; font-size: 16px; font-weight: 300; line-height: 150%;padding-top: 15px;font-family: sans-serif;text-align: center;" class="subheader">
+                Please share the below link with your group members to get their registration done. They dont need to make any payment but they need to feed the details to get the registration completed for them
+            </td>
+        </tr>
+        <!--LINE-->
+        <br>
+        <tr>
+            <td valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 13px; font-weight: 300; line-height: 150%;padding-top: 10px;font-family: sans-serif;" class="subheader">
+                <a href="<?php echo $grouplink; ?>" target="_blank" style="text-decoration: underline;">
+                    <table border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 240px; min-width: 120px; border-collapse: collapse; border-spacing: 0; padding: 0;">
+                        <tr>
+                            <td align="center" valign="middle" style="padding: 12px 24px; margin: 0; text-decoration: underline; border-collapse: collapse; border-spacing: 0; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px;" bgcolor="#E9703E">
+                                <a target="_blank" style="text-decoration: underline;color: #FFFFFF; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: 120%;" href='<?php echo $grouplink; ?>'>
+                                    Share Url
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </a>
+            </td>
+        </tr>
+        <!--                         PARAGRAPH 
+                         Set text color and font family ("sans-serif" or "Georgia, serif"). Duplicate all text styles in links, including line-height -->
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 17px; font-weight: 400; line-height: 160%;
+                                padding-top: 20px;
+                                padding-bottom: 25px;
+                                color: #000000;
+                                font-family: sans-serif;" class="paragraph">
+                Have a&nbsp;question? <a href="mailto:support@infinityvizag.in" target="_blank" style="color: #127DB3; font-family: sans-serif; font-size: 17px; font-weight: 400; line-height: mailto:160%;">support@infinityvizag.in</a>
+            </td>
+        </tr>
+        <!--End of WRAPPER-->
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="660" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: inherit;max-width: 650px;" class="wrapper">
+
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%;padding-top: 25px;" class="social-icons">
+                <table width="256" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; border-spacing: 0; padding: 0;">
+                    <tr>
+                        <td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
+                            <a target="_blank" href="https://www.facebook.com/people/InfinityVizag/100088155871955/" style="text-decoration: none;">
+                                <img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;color: #000000;" alt="F" title="Facebook" width="44" height="44" src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/facebook.png">
+                            </a>
+                        </td>
+                        <td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
+                            <a target="_blank" href="https://twitter.com/InfinityVizag" style="text-decoration: none;">
+                                <img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block;color: #000000;" alt="T" title="Twitter" width="44" height="44" src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/twitter.png">
+                            </a>
+                        </td>
+
+                        <td align="center" valign="middle" style="margin: 0; padding: 0; padding-left: 10px; padding-right: 10px; border-collapse: collapse; border-spacing: 0;">
+                            <a target="_blank" href="https://www.linkedin.com/company/infinityvizag/" style="text-decoration: none;">
+                                <img border="0" vspace="0" hspace="0" style="padding: 0; margin: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; border: none; display: inline-block; color: #000000;" alt="I" title="Linked in" width="44" height="44" src="https://raw.githubusercontent.com/konsav/email-templates/master/images/social-icons/instagram.png">
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-left: 6.25%; padding-right: 6.25%; width: 87.5%; font-size: 13px; font-weight: 400; line-height: 150%;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+                                color: #999999;
+                                font-family: sans-serif;" class="footer">
+
+                This email template was sent to you because you are registered with inifinity vizag.
+
+            </td>
+        </tr>
+
+    </table>
+
+    </td>
+    </tr>
+    </table>
